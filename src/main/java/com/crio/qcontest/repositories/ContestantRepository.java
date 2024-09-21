@@ -48,7 +48,7 @@ public class ContestantRepository implements IContestantRepository {
 
     private String getContestantId(Long contestId, Long userId){
         // Generate a new ID in this format:- "User[id] Contest[id]"
-        // Above representation of ID makes a Contestant unique.
+
         return new StringBuilder().append("User[").append(contestId).append("] Contest[").append(userId).append("]").toString();
     }
 }
